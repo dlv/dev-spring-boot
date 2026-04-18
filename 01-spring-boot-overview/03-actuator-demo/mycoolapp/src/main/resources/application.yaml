@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: mycoolapp
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+info:
+  app:
+    name: My Cool App
+    description: This is a cool application built with Spring Boot.
+    version: 1.0.0
