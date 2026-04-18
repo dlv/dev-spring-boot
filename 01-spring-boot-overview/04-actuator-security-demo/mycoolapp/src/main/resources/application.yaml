@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: mycoolapp
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - beans
+          - env
+          - metrics
+          - loggers
+          - threaddump
+          - httptrace
+          - mappings
+          - scheduledtasks
+          - auditevents
+          - conditions
+          - configprops
+          - caches
+          - liquibase
+          - startup
+info:
+  app:
+    name: My Cool App
+    description: This is a cool application built with Spring Boot.
+    version: 1.0.0
