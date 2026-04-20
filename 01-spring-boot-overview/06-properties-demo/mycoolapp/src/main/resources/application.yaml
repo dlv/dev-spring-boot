@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mycoolapp
+info:
+  app:
+    name: My Cool App
+    description: This is a cool application built with Spring Boot.
+    version: 1.0.0
+  team:
+    name: Prado Labs
+  coach:
+    name: Coach Carter
