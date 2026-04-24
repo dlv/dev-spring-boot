@@ -1,0 +1,23 @@
+spring:
+  main:
+    banner-mode: "off" # Disable Spring Boot startup banner
+  application:
+    name: cruddemo
+  datasource:
+    url: jdbc:mysql://localhost:3306/student_tracker?useSSL=false&serverTimezone=UTC
+    username: springstudent
+    password: springstudent
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    root: WARN
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+            jdbc:
+                bind: TRACE
